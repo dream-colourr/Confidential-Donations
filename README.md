@@ -60,17 +60,12 @@ cp .env.example .env
 # Deployer wallet private key (WITHOUT 0x prefix)
 PRIVATE_KEY=your_private_key_here
 
-# Zama FHEVM Sepolia RPC
+# Sepolia RPC
 SEPOLIA_RPC_URL=https://devnet.zama.ai
 
 # Etherscan API (for verification)
 ETHERSCAN_API_KEY=your_etherscan_api_key
 
-# Zama Gateway for FHE decryption
-GATEWAY_URL=https://gateway.sepolia.zama.dev
-
-# Fee collector address
-FEE_COLLECTOR_ADDRESS=0xYourAddress
 
 # Frontend config (after deployment)
 VITE_CONTRACT_ADDRESS=
