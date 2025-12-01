@@ -82,7 +82,7 @@ VITE_RPC_URL=https://devnet.zama.ai
 npm run compile
 ```
 
-### Deploy to Zama Sepolia
+### Deploy to Eth Sepolia
 
 ```bash
 npm run deploy:sepolia
@@ -90,7 +90,7 @@ npm run deploy:sepolia
 
 **Expected output:**
 ```
-Deploying to Zama FHEVM Sepolia...
+Deploying to Sepolia...
 Contract deployed to: 0xABC123...
 ✅ Deployment successful!
 ```
