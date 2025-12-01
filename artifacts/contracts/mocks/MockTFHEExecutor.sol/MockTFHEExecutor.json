@@ -1,0 +1,783 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "MockTFHEExecutor",
+  "sourceName": "contracts/mocks/MockTFHEExecutor.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheAdd",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "result",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheBitAnd",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheBitOr",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheBitXor",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheDiv",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheEq",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheGe",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheGt",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "control",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "ifTrue",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "ifFalse",
+          "type": "uint256"
+        }
+      ],
+      "name": "fheIfThenElse",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheLe",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheLt",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheMax",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheMin",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheMul",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "result",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheNe",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "ct",
+          "type": "uint256"
+        }
+      ],
+      "name": "fheNeg",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "ct",
+          "type": "uint256"
+        }
+      ],
+      "name": "fheNot",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheRand",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "upperBound",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheRandBounded",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheRem",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheRotl",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheRotr",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheShl",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheShr",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "lhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rhs",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "fheSub",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "result",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "ct",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "trivialEncrypt",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "result",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "ct",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "trivialEncrypt",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "result",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "inputProof",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "name": "verifyCiphertext",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "result",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561000f575f80fd5b5061086e8061001d5f395ff3fe608060405234801561000f575f80fd5b50600436106101bb575f3560e01c80638c14cc21116100f3578063e0c516ae11610093578063ec4057dc1161006e578063ec4057dc1461039e578063eee1833c146103b1578063f953e427146103c4578063fa33b7af146103d7575f80fd5b8063e0c516ae1461035f578063e0c5cbb314610372578063e71746b81461038c575f80fd5b8063a86e9de5116100ce578063a86e9de514610313578063a87deac414610326578063a8b42a8914610339578063cb3b94071461034c575f80fd5b80638c14cc21146102da578063900d294e146102ed5780639675211f14610300575f80fd5b80633e63c50a1161015e578063694daf7211610139578063694daf721461028e5780636be31758146102a1578063816d57d3146102b457806389a4314b146102c7575f80fd5b80633e63c50a1461025557806344ae9c5c14610268578063666a35881461027b575f80fd5b8063192710811161019957806319271081146102095780632c7d67b71461021c5780632e817ff01461022f57806336cdd31b14610242575f80fd5b8063052896f1146101bf57806305907343146101e457806313801ffa146101f7575b5f80fd5b6101d26101cd366004610577565b6103ea565b60405190815260200160405180910390f35b6101d26101f2366004610577565b610407565b6101d26102053660046105a9565b1990565b6101d2610217366004610577565b610425565b6101d261022a366004610577565b501890565b6101d261023d36600461065d565b610433565b6101d2610250366004610577565b610462565b6101d2610263366004610577565b61046d565b6101d2610276366004610577565b61047b565b6101d2610289366004610577565b501690565b6101d261029c366004610577565b610499565b6101d26102af366004610577565b6104a8565b6101d26102c2366004610577565b6104b6565b6101d26102d5366004610577565b501b90565b6101d26102e8366004610577565b6104c1565b6101d26102fb3660046106ce565b505f90565b6101d261030e366004610577565b6104cc565b6101d2610321366004610577565b6104da565b6101d2610334366004610577565b6104f0565b6101d26103473660046105a9565b6104fe565b6101d261035a3660046106e7565b61050e565b6101d261036d366004610577565b610524565b6101d2610380366004610710565b50805160209091012090565b6101d261039a36600461075b565b5090565b6101d26103ac366004610577565b501790565b6101d26103bf366004610577565b501c90565b6101d26103d2366004610577565b61052f565b6101d26103e536600461075b565b61053a565b5f828410156103f9575f6103fc565b60015b60ff16949350505050565b5f61041483610100610790565b84901c8385901b1790509392505050565b5f8284036103f9575f6103fc565b5f82515f0361044357505f61045a565b8280602001905181019061045791906107a3565b90505b949350505050565b5f61045a83856107ce565b5f8284116103f9575f6103fc565b5f61048883610100610790565b84901b8385901c1790509392505050565b5f828411156103f9575f6103fc565b5f8284146103f9575f6103fc565b5f61045a83856107e1565b5f61045a8385610790565b5f8284106103f9575f6103fc565b5f8284116104e8578261045a565b509192915050565b5f8284106104e8578261045a565b5f610508826107f8565b92915050565b5f835f0361051c578161045a565b509092915050565b5f61045a8385610812565b5f61045a8385610825565b5f825f0361054957505f610508565b610554600184610790565b9392505050565b80356001600160f81b031981168114610572575f80fd5b919050565b5f805f60608486031215610589575f80fd5b83359250602084013591506105a06040850161055b565b90509250925092565b5f602082840312156105b9575f80fd5b5035919050565b634e487b7160e01b5f52604160045260245ffd5b5f82601f8301126105e3575f80fd5b813567ffffffffffffffff808211156105fe576105fe6105c0565b604051601f8301601f19908116603f01168101908282118183101715610626576106266105c0565b8160405283815286602085880101111561063e575f80fd5b836020870160208301375f602085830101528094505050505092915050565b5f805f8060808587031215610670575f80fd5b8435935060208501356001600160a01b038116811461068d575f80fd5b9250604085013567ffffffffffffffff8111156106a8575f80fd5b6106b4878288016105d4565b9250506106c36060860161055b565b905092959194509250565b5f602082840312156106de575f80fd5b6105548261055b565b5f805f606084860312156106f9575f80fd5b505081359360208301359350604090920135919050565b5f8060408385031215610721575f80fd5b823567ffffffffffffffff811115610737575f80fd5b610743858286016105d4565b9250506107526020840161055b565b90509250929050565b5f806040838503121561076c575f80fd5b823591506107526020840161055b565b634e487b7160e01b5f52601160045260245ffd5b818103818111156105085761050861077c565b5f602082840312156107b3575f80fd5b5051919050565b634e487b7160e01b5f52601260045260245ffd5b5f826107dc576107dc6107ba565b500490565b80820281158282048414176105085761050861077c565b5f600160ff1b820161080c5761080c61077c565b505f0390565b5f82610820576108206107ba565b500690565b808201808211156105085761050861077c56fea26469706673582212206c75211386b7a3378ce7d91a319cb500a8c73f601ba3428d61d22b1f77d1c68b64736f6c63430008180033",
+  "deployedBytecode": "0x608060405234801561000f575f80fd5b50600436106101bb575f3560e01c80638c14cc21116100f3578063e0c516ae11610093578063ec4057dc1161006e578063ec4057dc1461039e578063eee1833c146103b1578063f953e427146103c4578063fa33b7af146103d7575f80fd5b8063e0c516ae1461035f578063e0c5cbb314610372578063e71746b81461038c575f80fd5b8063a86e9de5116100ce578063a86e9de514610313578063a87deac414610326578063a8b42a8914610339578063cb3b94071461034c575f80fd5b80638c14cc21146102da578063900d294e146102ed5780639675211f14610300575f80fd5b80633e63c50a1161015e578063694daf7211610139578063694daf721461028e5780636be31758146102a1578063816d57d3146102b457806389a4314b146102c7575f80fd5b80633e63c50a1461025557806344ae9c5c14610268578063666a35881461027b575f80fd5b8063192710811161019957806319271081146102095780632c7d67b71461021c5780632e817ff01461022f57806336cdd31b14610242575f80fd5b8063052896f1146101bf57806305907343146101e457806313801ffa146101f7575b5f80fd5b6101d26101cd366004610577565b6103ea565b60405190815260200160405180910390f35b6101d26101f2366004610577565b610407565b6101d26102053660046105a9565b1990565b6101d2610217366004610577565b610425565b6101d261022a366004610577565b501890565b6101d261023d36600461065d565b610433565b6101d2610250366004610577565b610462565b6101d2610263366004610577565b61046d565b6101d2610276366004610577565b61047b565b6101d2610289366004610577565b501690565b6101d261029c366004610577565b610499565b6101d26102af366004610577565b6104a8565b6101d26102c2366004610577565b6104b6565b6101d26102d5366004610577565b501b90565b6101d26102e8366004610577565b6104c1565b6101d26102fb3660046106ce565b505f90565b6101d261030e366004610577565b6104cc565b6101d2610321366004610577565b6104da565b6101d2610334366004610577565b6104f0565b6101d26103473660046105a9565b6104fe565b6101d261035a3660046106e7565b61050e565b6101d261036d366004610577565b610524565b6101d2610380366004610710565b50805160209091012090565b6101d261039a36600461075b565b5090565b6101d26103ac366004610577565b501790565b6101d26103bf366004610577565b501c90565b6101d26103d2366004610577565b61052f565b6101d26103e536600461075b565b61053a565b5f828410156103f9575f6103fc565b60015b60ff16949350505050565b5f61041483610100610790565b84901c8385901b1790509392505050565b5f8284036103f9575f6103fc565b5f82515f0361044357505f61045a565b8280602001905181019061045791906107a3565b90505b949350505050565b5f61045a83856107ce565b5f8284116103f9575f6103fc565b5f61048883610100610790565b84901b8385901c1790509392505050565b5f828411156103f9575f6103fc565b5f8284146103f9575f6103fc565b5f61045a83856107e1565b5f61045a8385610790565b5f8284106103f9575f6103fc565b5f8284116104e8578261045a565b509192915050565b5f8284106104e8578261045a565b5f610508826107f8565b92915050565b5f835f0361051c578161045a565b509092915050565b5f61045a8385610812565b5f61045a8385610825565b5f825f0361054957505f610508565b610554600184610790565b9392505050565b80356001600160f81b031981168114610572575f80fd5b919050565b5f805f60608486031215610589575f80fd5b83359250602084013591506105a06040850161055b565b90509250925092565b5f602082840312156105b9575f80fd5b5035919050565b634e487b7160e01b5f52604160045260245ffd5b5f82601f8301126105e3575f80fd5b813567ffffffffffffffff808211156105fe576105fe6105c0565b604051601f8301601f19908116603f01168101908282118183101715610626576106266105c0565b8160405283815286602085880101111561063e575f80fd5b836020870160208301375f602085830101528094505050505092915050565b5f805f8060808587031215610670575f80fd5b8435935060208501356001600160a01b038116811461068d575f80fd5b9250604085013567ffffffffffffffff8111156106a8575f80fd5b6106b4878288016105d4565b9250506106c36060860161055b565b905092959194509250565b5f602082840312156106de575f80fd5b6105548261055b565b5f805f606084860312156106f9575f80fd5b505081359360208301359350604090920135919050565b5f8060408385031215610721575f80fd5b823567ffffffffffffffff811115610737575f80fd5b610743858286016105d4565b9250506107526020840161055b565b90509250929050565b5f806040838503121561076c575f80fd5b823591506107526020840161055b565b634e487b7160e01b5f52601160045260245ffd5b818103818111156105085761050861077c565b5f602082840312156107b3575f80fd5b5051919050565b634e487b7160e01b5f52601260045260245ffd5b5f826107dc576107dc6107ba565b500490565b80820281158282048414176105085761050861077c565b5f600160ff1b820161080c5761080c61077c565b505f0390565b5f82610820576108206107ba565b500690565b808201808211156105085761050861077c56fea26469706673582212206c75211386b7a3378ce7d91a319cb500a8c73f601ba3428d61d22b1f77d1c68b64736f6c63430008180033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

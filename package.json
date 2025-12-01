@@ -1,0 +1,36 @@
+{
+  "name": "confidential-donations-dapp",
+  "version": "2.0.0",
+  "description": "Privacy-preserving donation platform using Zama FHE v0.7+",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy:sepolia": "npx hardhat run scripts/deploy.js --network sepolia",
+    "verify:sepolia": "npx hardhat verify --network sepolia",
+    "deploy:local": "npx hardhat run scripts/deploy.js --network localhost",
+    "node": "npx hardhat node",
+    "frontend": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "clean": "npx hardhat clean"
+  },
+  "keywords": [
+    "blockchain",
+    "fhe",
+    "zama",
+    "donations",
+    "privacy"
+  ],
+  "author": "Your Name",
+  "license": "BSD-3-Clause-Clear",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "dotenv": "^16.3.1",
+    "@fhevm/solidity": "^0.9.1",
+    "hardhat": "^2.19.5"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.1",
+    "ethers": "^6.10.0"
+  }
+}
